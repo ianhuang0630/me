@@ -1,38 +1,341 @@
-.App {
-  text-align: center;
+/* @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap'); */
+/* @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"); */
+/* @import url('https://fonts.googleapis.com/css2?family=Hammersmith+One&family=Patua+One&family=Poppins:wght@400;500&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Patua+One&family=Poppins:wght@400;500&family=Rubik:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+
+.full-screen{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  /* background-color: #27242d; */
+  background: white;
+  /* background:black; */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.scene{
+  z-index: 1;
+  width: 100%;
+  height: 70%;
+  top: 0%;
+  left: 0%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.full-app{
+  position: relative;
+  width: 60%;
+  margin: auto;  
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header-chunk{
+  z-index: 2;
+  position: relative;
+  width: 80%;
+  height: 30%;
+  margin: auto;
+}
+
+.main-header{
+  font-family: "Poppins";
+  font-size: min(min(8vw,90px), 6vh);
+  width: 100%;
+  color: #888789;
+}
+
+.header-style{
+  margin-top: 50px;
+  margin-bottom: 0px;
+  text-align: center
+}
+
+.sub-header{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: min(min(4vw,45px), 3vh);
+  /* width: 600px; */
+  margin: auto;
+  color: #888789;
+  /* border: solid blue; */
+}
+
+.sub-header-ff{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 30px;
+  /* width: 600px; */
+  margin: auto;
+  color: #888789;
+}
+
+.elevator-levels{
+  z-index: 3;
+  position: fixed;
+  top: 50%;
+  left: 2%;
+  transform: translate(0%, -50%);
+}
+
+.elevator-button{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: none;
+  width: 20px;
+  height: 10px; 
+}
+
+.button-offfocus{ 
+  background: rgb(99, 87, 122);
+}
+
+.button-onfocus{
+  background: rgb(165, 144, 202);
+}
+
+.infotext-dark{
+  color: gray;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.title{
+  position: absolute;
+}
+
+.bio{
+  /* border: solid black; */
+}
+
+.center{
+  width: 100%;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.paper-image{
+  width: 200px;
+  height: 200px;
+  border-radius: 30px;
+  margin-top: 15px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.work-block{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  margin: auto;
+}
+
+.paper-text{
+  width: 80%;
+}
+
+.web-logo{
+  width: 50px;
+}
+
+.navbar{
+  display: flex;
+  width: 100%;
+  margin-top: 30px;
+}
+
+.my-name{
+  width: 30%;
+  margin-top: auto;
+  margin-bottom: auto;
+  font-family: 'Poppins', sans-serif;
+  margin-left: 15px;
+  font-weight: 800;
+  font-size: min(4vw, 30px);
+}
+
+.section-tabs{
+  width: 80%;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  margin-top: auto;
+  text-align: right;
+  margin-bottom: auto;
+}
+
+.research-block{
+  width: max(60%, 380px);
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+}
+
+
+.work-title{
+  font-family: 'Montserrat';
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.work-author{
+  font-family: 'Montserrat';
+  font-weight: 600;
+  color: gray;
+  margin-top: 5px;
+  margin-bottom: 3px;
+}
+
+.work-button{
+  font-size: 20px;
+}
+.work-button-color{
+  color: rgb(99, 87, 122);
+  font-family: 'Montserrat';
+  font-weight: 600;
+}
+.work-button-color:hover{
+  color: #ffcc00; 
+}
+
+.work-description{
+  font-family: 'Montserrat';
+  font-weight: 400;
+}
+
+
+footer{
+  font-family: 'MontSerrat';
+  font-weight: 400;
+  font-size: 14px;
+  color: #888789;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.about-block{
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+}
+
+.intro-block{
+  margin-top: 15px;
+  margin-bottom: 15px;
+  margin: auto;
+  width: max(60%, 380px);
+}
+
+.intro-image{
+  width: 200px; 
+  border-radius: 50%;
+  margin-left: 50%;
+  transform: translate(-50%, 0%);
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.intro-description{
+  font-family: 'Montserrat';
+  font-weight: 400;
+}
+
+.intro-text{
+  margin: auto;
+  width: 80%;
+}
+
+.spacer{ 
+  color:  #88878955;
+}
+
+.waving{
+  width: min(50vw, 400px);
+  display: block;
+  margin-right: 0;
+  margin-left: auto;
+}
+
+.waving-message{
+  width: min(230px, 80%);
+  text-align: center;
+  margin-right: 5%;
+  margin-left: auto;
+  font: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  padding-left: 10px;
+  padding-right: 10px;
+  background: rgb(99, 87, 122);
   color: white;
+  border-radius: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+.character{
+  position: fixed;
+  z-index: 4;
+  top: 50%;
+  width: min(70vw, 60%);
+  right: 0px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.contact-block{
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: 'Montserrat';
+  font-weight: 400;
+  font-size: 18px;;
+  text-align: center;
+  width: 50%;
+}
+
+.purplehat{
+  margin-top: 15px;
+  width: min(40%,600px);
+}
+
+.hide{
+  display: none;
+}
+
+.elevator-label{
+  position: absolute;
+  top: 4px;
+  left: 30px;
+  width: 80px;
+  text-align: center;
+  background: rgb(165, 144, 202);
+  border-radius: 8px;
+  font: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  color: white;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.show{
+  display: block;
+}
+
+.loading-screen{
+  position: absolute;
+  top: 20%;
+  margin-left: 50%;
+  transform: translate(-50%, 0%);
+  text-align: center;
+  width: 30%;
+}
+.loading-message{
+  position: relative;
+  top: -40px;
+  font: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  color: gray;
+}
+.loading-animation{
+  width: 100%;
 }
