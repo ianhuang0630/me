@@ -127,12 +127,12 @@ function App() {
         <h2 className="header-style sub-header-ff"> About </h2>
         <IntroBlock img_src="assets/profile_pic.png"
           description="I'm a Ph.D. student at Stanford doing research in AI
-          and machine learning, advised by Leonidas Guibas, and a
-          student researcher at Meta Reality Labs. I'm
+          and machine learning, advised by Leonidas Guibas. I'm
           specifically interested in 3D content generation and
           technology that can advance the way we tell and experience
-          stories. Previously, I studied applied math and CS at Columbia
-          University, where I worked on projects around video understanding,
+          stories. Previously, I worked as a student researcher at Meta 
+          Reality Labs and studied applied math and CS in undergrad at Columbia, 
+          where I worked on projects around video understanding,
           robotics and neural network interpretability." />
       </div>
 
