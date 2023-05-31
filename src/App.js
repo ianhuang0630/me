@@ -138,10 +138,18 @@ function App() {
 
       <div className="research-block" ref={researchSection} >
         <h2 className="header-style sub-header-ff"> Research </h2>
+        <WorkBlock img_src="assets/pictures/paper8.png"
+          title="Aladdin: Zero-Shot Hallucination of Stylized 3D Assets from Abstract Scene Descriptions"
+          authors={"Ian Huang, Vrishab Krishna, Omoruyi Atekha, Leonidas Guibas"}
+          paperlink="assets/papers/aladdin.pdf"
+          githublink={null}
+          subtext="Under review"
+          description='What constitutes the "vibe" of a particular scene? What should one find in "a busy, dirty city street", "an idyllic countryside", or "a crime scene in an abandoned living room"? The translation from abstract scene descriptions to stylized scene elements cannot be done with any generality by extant systems trained on rigid and limited indoor datasets. In this paper, we propose to leverage the knowledge captured by foundation models to accomplish this translation. We present a system that can serve as a tool to generate stylized assets for 3D scenes described by a short phrase, without the need to enumerate the objects to be found within the scene or give instructions on their appearance. Additionally, it is robust to open-world concepts in a way that traditional methods trained on limited data are not, affording more creative freedom to the 3D artist. Our system demonstrates this using a foundation model "team" composed of a large language model, a vision-language model and several image diffusion models, which communicate using an interpretable and user-editable intermediate representation, thus allowing for more versatile and controllable stylized asset generation for 3D artists. We introduce novel metrics for this task, and show through human evaluations that in 91% of the cases, our system outputs are judged more faithful to the semantics of the input scene description than the baseline, thus highlighting the potential of this approach to radically accelerate the 3D content creation process for 3D artists.'
+        />
         <WorkBlock img_src="assets/pictures/paper7.png"
           title="LADIS: Language Disentanglement for 3D Shape Editing"
           authors={ "Ian Huang, Panos Achlioptas, Tianyi Zhang, Sergey Tulyakov, Minhyuk Sung, Leonidas Guibas" }
-          paperlink="assets/papers/ladis.pdf"
+          paperlink="https://arxiv.org/abs/2212.05011"
           githublink="https://github.com/ianhuang0630/LADIS"
           subtext="Accepted to Findings of EMNLP 2022"
           description="Natural language interaction is a promising direction for democratizing 3D shape design. However, existing methods for text-driven 3D shape editing face challenges in producing decoupled, local edits to 3D shapes. We address this problem by learning disentangled latent representations that ground language in 3D geometry. To this end, we propose a complementary tool set including a novel network architecture, a disentanglement loss, and a new editing procedure. Additionally, to measure edit locality, we define a new metric that we call part-wise edit precision. We show that our method outperforms existing SOTA methods by 20% in terms of edit locality, and up to 6.6% in terms of language reference resolution accuracy. Our work suggests that by solely disentangling language representations, downstream 3D shape editing can become more local to relevant parts, even if the model was never given explicit part-based supervision." />
