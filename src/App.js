@@ -138,6 +138,15 @@ function App() {
 
       <div className="research-block" ref={researchSection} >
         <h2 className="header-style sub-header-ff"> Research </h2>
+	<WorkBlock img_src="assets/pictures/paper9.png"
+          title="CAD Photorealistic 3D Generation via Adversarial Distillation"
+          authors={"Ziyu Wan, Despoina Paschalidou, Ian Huang, Hongyu Liu, Bokui Shen, Xiaoyu Xiang, Jing Liao, Leonidas Guibas"}
+          paperlink="https://arxiv.org/abs/2312.06663"
+          githublink="https://github.com/raywzy/CAD"
+	  webpagelink="http://raywzy.com/CAD/"
+          subtext="Under review"
+          description='The increased demand for 3D data in AR/VR, robotics and gaming applications, gave rise to powerful generative pipelines capable of synthesizing high-quality 3D objects. Most of these models rely on the Score Distillation Sampling (SDS) algorithm to optimize a 3D representation such that the rendered image maintains a high likelihood as evaluated by a pre-trained diffusion model. However, finding a correct mode in the high-dimensional distribution produced by the diffusion model is challenging and often leads to issues such as over-saturation, over-smoothing, and Janus-like artifacts. In this paper, we propose a novel learning paradigm for 3D synthesis that utilizes pre-trained diffusion models. Instead of focusing on mode-seeking, our method directly models the distribution discrepancy between multi-view renderings and diffusion priors in an adversarial manner, which unlocks the generation of high-fidelity and photorealistic 3D content, conditioned on a single image and prompt. Moreover, by harnessing the latent space of GANs and expressive diffusion model priors, our method facilitates a wide variety of 3D applications including single-view reconstruction, high diversity generation and continuous 3D interpolation in the open domain. The experiments demonstrate the superiority of our pipeline compared to previous works in terms of generation quality and diversity.'
+        />
         <WorkBlock img_src="assets/pictures/paper8.png"
           title="Aladdin: Zero-Shot Hallucination of Stylized 3D Assets from Abstract Scene Descriptions"
           authors={"Ian Huang, Vrishab Krishna, Omoruyi Atekha, Leonidas Guibas"}
