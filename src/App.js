@@ -138,13 +138,20 @@ function App() {
 
       <div className="research-block" ref={researchSection} >
         <h2 className="header-style sub-header-ff"> Research </h2>
+	<WorkBlock img_src="assets/pictures/paper10.png"
+          title="BlenderAlchemy: Editing 3D Graphics with Vision-Language Models"
+          authors={"Ian Huang, Guandao Yang, Leonidas Guibas"}
+          subtext="Under Review"
+          description="Graphics design is important for various applications, including movie production and game design. To create a high-quality scene, designers usually need to spend hours in software like Blender, in which they might need to interleave and repeat operations, such as connecting material nodes, hundreds of times. Moreover, slightly different design goals may require completely different sequences, making automation difficult. In this paper, we propose a system that leverages Vision-Language Models (VLMs), like GPT-4V, to intelligently search the design action space to arrive at an answer that can satisfy a user's intent. Specifically, we design a vision-based edit generator and state evaluator to work together to find the correct sequence of actions to achieve the goal. Inspired by the role of visual imagination in the human design process, we supplement the visual reasoning capabilities of VLMs with ``imagined'' reference images from image-generation models, providing visual grounding of abstract language descriptions. In this paper, we provide empirical evidence suggesting our system can produce simple but tedious Blender editing sequences for tasks such as editing procedural materials from text and/or reference images, as well as adjusting lighting configurations for product renderings in complex scenes."
+        />
+	
 	<WorkBlock img_src="assets/pictures/paper9.png"
-          title="CAD Photorealistic 3D Generation via Adversarial Distillation"
+          title="CAD: Photorealistic 3D Generation via Adversarial Distillation"
           authors={"Ziyu Wan, Despoina Paschalidou, Ian Huang, Hongyu Liu, Bokui Shen, Xiaoyu Xiang, Jing Liao, Leonidas Guibas"}
           paperlink="https://arxiv.org/abs/2312.06663"
           githublink="https://github.com/raywzy/CAD"
 	  webpagelink="http://raywzy.com/CAD/"
-          subtext="Under review"
+          subtext="Accepted to CVPR2024"
           description='The increased demand for 3D data in AR/VR, robotics and gaming applications, gave rise to powerful generative pipelines capable of synthesizing high-quality 3D objects. Most of these models rely on the Score Distillation Sampling (SDS) algorithm to optimize a 3D representation such that the rendered image maintains a high likelihood as evaluated by a pre-trained diffusion model. However, finding a correct mode in the high-dimensional distribution produced by the diffusion model is challenging and often leads to issues such as over-saturation, over-smoothing, and Janus-like artifacts. In this paper, we propose a novel learning paradigm for 3D synthesis that utilizes pre-trained diffusion models. Instead of focusing on mode-seeking, our method directly models the distribution discrepancy between multi-view renderings and diffusion priors in an adversarial manner, which unlocks the generation of high-fidelity and photorealistic 3D content, conditioned on a single image and prompt. Moreover, by harnessing the latent space of GANs and expressive diffusion model priors, our method facilitates a wide variety of 3D applications including single-view reconstruction, high diversity generation and continuous 3D interpolation in the open domain. The experiments demonstrate the superiority of our pipeline compared to previous works in terms of generation quality and diversity.'
         />
         <WorkBlock img_src="assets/pictures/paper8.png"
@@ -152,7 +159,7 @@ function App() {
           authors={"Ian Huang, Vrishab Krishna, Omoruyi Atekha, Leonidas Guibas"}
           paperlink="https://arxiv.org/abs/2306.06212"
           githublink="https://github.com/ianhuang0630/Aladdin"
-          subtext="Under review"
+          subtext="On Arxiv"
           description='What constitutes the "vibe" of a particular scene? What should one find in "a busy, dirty city street", "an idyllic countryside", or "a crime scene in an abandoned living room"? The translation from abstract scene descriptions to stylized scene elements cannot be done with any generality by extant systems trained on rigid and limited indoor datasets. In this paper, we propose to leverage the knowledge captured by foundation models to accomplish this translation. We present a system that can serve as a tool to generate stylized assets for 3D scenes described by a short phrase, without the need to enumerate the objects to be found within the scene or give instructions on their appearance. Additionally, it is robust to open-world concepts in a way that traditional methods trained on limited data are not, affording more creative freedom to the 3D artist. Our system demonstrates this using a foundation model "team" composed of a large language model, a vision-language model and several image diffusion models, which communicate using an interpretable and user-editable intermediate representation, thus allowing for more versatile and controllable stylized asset generation for 3D artists. We introduce novel metrics for this task, and show through human evaluations that in 91% of the cases, our system outputs are judged more faithful to the semantics of the input scene description than the baseline, thus highlighting the potential of this approach to radically accelerate the 3D content creation process for 3D artists.'
         />
         <WorkBlock img_src="assets/pictures/paper7.png"
