@@ -141,6 +141,8 @@ function App() {
 	<WorkBlock img_src="assets/pictures/paper10.png"
           title="BlenderAlchemy: Editing 3D Graphics with Vision-Language Models"
           authors={"Ian Huang, Guandao Yang, Leonidas Guibas"}
+	  paperlink="https://arxiv.org/abs/2404.17672"
+	  webpagelink="https://ianhuang0630.github.io/BlenderAlchemyWeb/"
           subtext="Under Review"
           description="Graphics design is important for various applications, including movie production and game design. To create a high-quality scene, designers usually need to spend hours in software like Blender, in which they might need to interleave and repeat operations, such as connecting material nodes, hundreds of times. Moreover, slightly different design goals may require completely different sequences, making automation difficult. In this paper, we propose a system that leverages Vision-Language Models (VLMs), like GPT-4V, to intelligently search the design action space to arrive at an answer that can satisfy a user's intent. Specifically, we design a vision-based edit generator and state evaluator to work together to find the correct sequence of actions to achieve the goal. Inspired by the role of visual imagination in the human design process, we supplement the visual reasoning capabilities of VLMs with imagined reference images from image-generation models, providing visual grounding of abstract language descriptions. In this paper, we provide empirical evidence suggesting our system can produce simple but tedious Blender editing sequences for tasks such as editing procedural materials from text and/or reference images, as well as adjusting lighting configurations for product renderings in complex scenes."
         />
