@@ -11,6 +11,8 @@ import { ChakraProvider } from '@chakra-ui/react'
 import './App.css';
 import { useEffect, useState, useRef } from 'react';
 import { smootherstep } from 'three/src/math/MathUtils';
+import { FaTwitter } from "react-icons/fa";
+
 
 function App() {
   const d = new Date();
@@ -90,6 +92,10 @@ function App() {
       behavior: "smooth"
     });
   }
+	
+  const newTabTwitter = () => {
+    window.open("https://twitter.com/ianhuang3d", '_blank').focus();
+  }
 
   function onClickWave(e) {
     set_waveDismissed(true);
@@ -102,7 +108,7 @@ function App() {
       </div>   
       <div className="header-chunk">
         <div className="center" > 
-          <NavBar item2onClick={[["About", scrollToAbout], ["Research", scrollToResearch], ["Contact", scrollToContact]]} />
+          <NavBar item2onClick={[["About", scrollToAbout], ["Research", scrollToResearch], [<FaTwitter />, newTabTwitter], ["Contact", scrollToContact]]} />
         </div> 
         <div className="header">
           <h1 className="header-style main-header"> Hi, I'm Ian </h1>
