@@ -147,8 +147,9 @@ function App() {
 	<WorkBlock img_src="assets/pictures/paper10.png"
           title="BlenderAlchemy: Editing 3D Graphics with Vision-Language Models"
           authors={"Ian Huang, Guandao Yang, Leonidas Guibas"}
-	  paperlink="https://arxiv.org/abs/2404.17672"
-	  webpagelink="https://ianhuang0630.github.io/BlenderAlchemyWeb/"
+          paperlink="https://arxiv.org/abs/2404.17672"
+          webpagelink="https://ianhuang0630.github.io/BlenderAlchemyWeb/"
+          tweetlink="https://x.com/IanHuang3D/status/1785148354030354465"
           subtext="Under Review"
           description="Graphics design is important for various applications, including movie production and game design. To create a high-quality scene, designers usually need to spend hours in software like Blender, in which they might need to interleave and repeat operations, such as connecting material nodes, hundreds of times. Moreover, slightly different design goals may require completely different sequences, making automation difficult. In this paper, we propose a system that leverages Vision-Language Models (VLMs), like GPT-4V, to intelligently search the design action space to arrive at an answer that can satisfy a user's intent. Specifically, we design a vision-based edit generator and state evaluator to work together to find the correct sequence of actions to achieve the goal. Inspired by the role of visual imagination in the human design process, we supplement the visual reasoning capabilities of VLMs with imagined reference images from image-generation models, providing visual grounding of abstract language descriptions. In this paper, we provide empirical evidence suggesting our system can produce simple but tedious Blender editing sequences for tasks such as editing procedural materials from text and/or reference images, as well as adjusting lighting configurations for product renderings in complex scenes."
         />
@@ -169,12 +170,14 @@ function App() {
           githublink="https://github.com/ianhuang0630/Aladdin"
           subtext="On Arxiv"
           description='What constitutes the "vibe" of a particular scene? What should one find in "a busy, dirty city street", "an idyllic countryside", or "a crime scene in an abandoned living room"? The translation from abstract scene descriptions to stylized scene elements cannot be done with any generality by extant systems trained on rigid and limited indoor datasets. In this paper, we propose to leverage the knowledge captured by foundation models to accomplish this translation. We present a system that can serve as a tool to generate stylized assets for 3D scenes described by a short phrase, without the need to enumerate the objects to be found within the scene or give instructions on their appearance. Additionally, it is robust to open-world concepts in a way that traditional methods trained on limited data are not, affording more creative freedom to the 3D artist. Our system demonstrates this using a foundation model "team" composed of a large language model, a vision-language model and several image diffusion models, which communicate using an interpretable and user-editable intermediate representation, thus allowing for more versatile and controllable stylized asset generation for 3D artists. We introduce novel metrics for this task, and show through human evaluations that in 91% of the cases, our system outputs are judged more faithful to the semantics of the input scene description than the baseline, thus highlighting the potential of this approach to radically accelerate the 3D content creation process for 3D artists.'
+          tweetlink="https://x.com/IanHuang3D/status/1668633554379763726"
         />
         <WorkBlock img_src="assets/pictures/paper7.png"
           title="LADIS: Language Disentanglement for 3D Shape Editing"
           authors={ "Ian Huang, Panos Achlioptas, Tianyi Zhang, Sergey Tulyakov, Minhyuk Sung, Leonidas Guibas" }
           paperlink="https://arxiv.org/abs/2212.05011"
           githublink="https://github.com/ianhuang0630/LADIS"
+          tweetlink="https://x.com/IanHuang3D/status/1602776641326882817"
           subtext="Accepted to Findings of EMNLP 2022"
           description="Natural language interaction is a promising direction for democratizing 3D shape design. However, existing methods for text-driven 3D shape editing face challenges in producing decoupled, local edits to 3D shapes. We address this problem by learning disentangled latent representations that ground language in 3D geometry. To this end, we propose a complementary tool set including a novel network architecture, a disentanglement loss, and a new editing procedure. Additionally, to measure edit locality, we define a new metric that we call part-wise edit precision. We show that our method outperforms existing SOTA methods by 20% in terms of edit locality, and up to 6.6% in terms of language reference resolution accuracy. Our work suggests that by solely disentangling language representations, downstream 3D shape editing can become more local to relevant parts, even if the model was never given explicit part-based supervision." />
         <WorkBlock img_src="assets/pictures/paper6.png"
@@ -190,6 +193,7 @@ function App() {
           paperlink="https://arxiv.org/abs/2112.06390"
           webpagelink="https://mhsung.github.io/publications/partglot"
           githublink="https://github.com/63days/PartGlot"
+          tweetlink="https://x.com/MinhyukSung/status/1509016338228199427"
           subtext="Accepted to CVPR 2022 (Oral)"
           description="We introduce PartGlot, a neural framework and associated architectures for learning semantic part segmentation of 3D shape geometry, based solely on part referential language. We exploit the fact that linguistic descriptions of a shape can provide priors on the shape's parts -- as natural language has evolved to reflect human perception of the compositional structure of objects, essential to their recognition and use. For training, we use the paired geometry / language data collected in the ShapeGlot work for their reference game, where a speaker creates an utterance to differentiate a target shape from two distractors and the listener has to find the target based on this utterance. Our network is designed to solve this target discrimination problem, carefully incorporating a Transformer-based attention module so that the output attention can precisely highlight the semantic part or parts described in the language. Furthermore, the network operates without any direct supervision on the 3D geometry itself. Surprisingly, we further demonstrate that the learned part information is generalizable to shape classes unseen during training. Our approach opens the possibility of learning 3D shape parts from language alone, without the need for large-scale part geometry annotations, thus facilitating annotation acquisition." />
       </div>

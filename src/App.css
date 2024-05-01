@@ -202,6 +202,9 @@
   font-weight: 400;
 }
 
+.work-description-expand-button{
+  color: rgb(161, 147, 189);
+}
 
 footer{
   font-family: 'MontSerrat';
