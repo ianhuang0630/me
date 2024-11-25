@@ -13,6 +13,8 @@ import { useEffect, useState, useRef } from 'react';
 import { smootherstep } from 'three/src/math/MathUtils';
 import { FaTwitter } from "react-icons/fa";
 
+import ReactGA from 'react-ga4';
+ReactGA.initialize('G-6MTDN5D99G');
 
 function App() {
   const d = new Date();
@@ -27,27 +29,31 @@ function App() {
   const [waveDismissed, set_waveDismissed] = useState(false);
 
   const articleStructuredData = {
-  "@context": "http://schema.org",
-  "@type": "Person",
-  "@id":"https://ianhuang0630.github.io/me/",
-    "familyName": "Huang",
-    "givenName": "Ian",
-    "worksFor": "https://www.stanford.edu/",
-    "jobTitle": "PhD Student",
-    "alumniOf": {
-    "@type": "EducationalOrganization",
-      "name": "Columbia University",
-      "url": "https://www.columbia.edu/"
-  },
-    "image": "https://ianhuang0630.github.io/me/assets/profile_pic.png",
-    "sameAs": ["http://ianhuang.ai",
-      "https://x.com/IanHuang3D",
-      "https://scholar.google.com/citations?user=PTfn2rsAAAAJ&hl=en"
-  ]
-  }
-
+      "@context": "https://schema.org",
+      "@type": "ProfilePage",
+      "mainEntity": {
+        "@type": "Person",
+        "name": "Ian Huang",
+     	 "worksFor": "https://www.stanford.edu/",
+        "jobTitle": "PhD Student",
+        "alumniOf": {
+        "@type": "EducationalOrganization",
+          "name": "Columbia University",
+          "url": "https://www.columbia.edu/"
+      },
+        "image": "https://ianhuang0630.github.io/me/assets/profile_pic.png",
+        "sameAs": ["http://ianhuang.ai",
+          "https://x.com/IanHuang3D",
+          "https://scholar.google.com/citations?user=PTfn2rsAAAAJ&hl=en"
+      ]
+      }
+    }
+  
 
   useEffect(() => { 
+
+    ReactGA.send({ hitType: "pageview", page: window.location.pathname });
+
     window.addEventListener(
       'scroll',
       () => {
