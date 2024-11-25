@@ -26,6 +26,27 @@ function App() {
   const [showWave, set_showWave] = useState(false);
   const [waveDismissed, set_waveDismissed] = useState(false);
 
+  const articleStructuredData = {
+  "@context": "http://schema.org",
+  "@type": "Person",
+  "@id":"https://ianhuang0630.github.io/me/",
+    "familyName": "Huang",
+    "givenName": "Ian",
+    "worksFor": "https://www.stanford.edu/",
+    "jobTitle": "PhD Student",
+    "alumniOf": {
+    "@type": "EducationalOrganization",
+      "name": "Columbia University",
+      "url": "https://www.columbia.edu/"
+  },
+    "image": "https://ianhuang0630.github.io/me/assets/profile_pic.png",
+    "sameAs": ["http://ianhuang.ai",
+      "https://x.com/IanHuang3D",
+      "https://scholar.google.com/citations?user=PTfn2rsAAAAJ&hl=en"
+  ]
+  }
+
+
   useEffect(() => { 
     window.addEventListener(
       'scroll',
@@ -103,6 +124,13 @@ function App() {
 
   return (
     <div className="full-screen" >
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(articleStructuredData),
+        }}
+      />
+
       <div className="elevator-levels">
         <ElevatorLevels focus_level={focus} button2semantics={[["To Top", scrollToTop], ["About", scrollToAbout], ["Research", scrollToResearch], ["Contact", scrollToContact]]} />
       </div>   
