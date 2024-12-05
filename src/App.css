@@ -115,7 +115,7 @@
 .paper-image{
   width: 200px;
   height: 200px;
-  border-radius: 30px;
+  /* border-radius: 30px; */
   margin-top: 15px;
   margin-left: 10px;
   margin-right: 10px;
