@@ -182,15 +182,22 @@ function App() {
       <WorkBlock img_src="assets/pictures/paper12.png"
           title="FirePlace: Geometric Refinements of LLM Common Sense Reasoning for 3D Object Placement"
           authors={"Ian Huang, Yanan Bao, Karen Truong, Howard Zhou, Cordelia Schmid, Leonidas Guibas, Alireza Fathi"}
-          subtext="Accepted to CVPR2025"
+	  webpagelink="https://fireplace3d.github.io/"
+	  paperlink="https://arxiv.org/abs/2503.04919"
+	  tweetlink="https://x.com/IanHuang3D/status/1905021827552063850"
+          subtext="Accepted to CVPR2025 (Highlight)"
           description="Scene generation with 3D assets presents a complex challenge, requiring both high-level semantic understanding and low-level geometric reasoning. While Multimodal Large Language Models (MLLMs) excel at semantic tasks, their application to 3D scene generation is hindered by their limited grounding on 3D geometry. In this paper, we investigate how to best work with MLLMs in an object placement task. Towards this goal, we introduce a novel framework, FirePlace, that applies existing MLLMs in (1) 3D geometric reasoning and the extraction of relevant geometric details from the 3D scene, (2) constructing and solving geometric constraints on the extracted low-level geometry, and (3) pruning for final placements that conform to common sense. By combining geometric reasoning with real-world understanding of MLLMs, our method can propose object placements that satisfy both geometric constraints as well as high-level semantic common-sense considerations. Our experiments show that these capabilities allow our method to place objects more effectively in complex scenes with intricate geometry, surpassing the quality of prior work."
         />
 
       <WorkBlock img_src="assets/pictures/paper11.png"
           title="BlenderGym: Benchmarking Foundational Model Systems for Graphics Editing"
           authors={"Yunqi Gu, Ian Huang, Jihyeon Je, Guandao Yang, Leonidas Guibas"}
-          subtext="Accepted to CVPR2025"
+          paperlink="https://arxiv.org/abs/2504.01786"
+	  githublink="https://github.com/richard-guyunqi/BlenderGym-Open"
+	  webpagelink="https://blendergym.github.io/"
+	  subtext="Accepted to CVPR2025 (Highlight)"
           description="3D graphics editing is a crucial component in applications like movie production and game design, yet it remains a time-consuming process that demands highly specialized domain expertise. Automating the process is challenging because graphical editing requires performing different tasks, each requiring distinct skill sets. Recently, multi-modal foundation models have emerged as a powerful framework for automating the editing process, but their development and evaluation are bottlenecked by the lack of a comprehensive benchmark that requires human-level perception and real-world editing complexity. In this work, we present BlenderGym, a benchmark designed to systematically evaluate foundational model systems for 3D graphics editing with tasks capturing the various aspects of 3D editing and fixed ground-truth for evaluation. We evaluate closed- and open-source VLMs with BlenderGym and observe that even the state-of-the-art VLMs struggle with tasks relatively easily for a novice Blender user. Enabled by BlenderGym, we study how inference scaling techniques impact graphics editing tasks. Notably, our findings reveal that the verifier used to guide the scaling of generation can itself be improved through scaling, complementing recent insights on scaling of LLM generation in coding and math tasks. We further show that inference compute is not uniformly effective and can be optimized by strategically distributing it between generation and verification."
+	tweetlink="https://x.com/IanHuang3D/status/1910894343805862310"
         />
 
 	<WorkBlock img_src="assets/pictures/paper10.png"
