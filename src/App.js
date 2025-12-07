@@ -145,19 +145,19 @@ function App() {
           <NavBar item2onClick={[["About", scrollToAbout], ["Research", scrollToResearch], [<FaTwitter />, newTabTwitter], ["Contact", scrollToContact]]} />
         </div> 
         <div className="header">
-          <h1 className="header-style main-header"> Hi, I'm Ian </h1>
-          <h2 className="header-style sub-header"> I'm a Ph.D. student at Stanford working on 3D content generation.</h2>
+          {/* <h1 className="header-style main-header"> Hi, I'm Ian </h1> */}
+          {/* <h2 className="header-style sub-header"> I'm working on something new.</h2> */}
         </div>
       </div>
 
-      {(showWave && !waveDismissed) ?
+      {/* {(showWave && !waveDismissed) ?
         <div className="character" onClick={onClickWave}>
           <WavingFig message={<p>
             Hi there! I'm building a team for a new project in scene generation. If you're interested, please reach out!
           </p>} />
         </div>
         : null
-      }
+      } */}
 
       <div className="scene">
         <DeskSceneLoading orbit={!mobile} />
@@ -166,18 +166,15 @@ function App() {
       <div className="about-block" ref={aboutSection} >
         <h2 className="header-style sub-header-ff"> About </h2>
         <IntroBlock img_src="assets/profile_pic.png"
-          description="I'm a Ph.D. student at Stanford doing research in AI
-          and machine learning, advised by Leonidas Guibas. I'm
-          specifically interested in 3D content generation and
-          technology that can advance the way we tell and experience
-          stories. Previously, I worked as a student researcher at Meta 
-          Reality Labs and studied applied math and CS in undergrad at Columbia, 
-          where I worked on projects around video understanding,
-          robotics and neural network interpretability." />
+          description="I graduated from Stanford as a Ph.D. student advised by Leonidas Guibas. 
+          My research focused on 3D content generation and multimodal reasoning.
+          Previously, I was a student researcher at Google Deepmind and Meta 
+          Reality Labs.
+          Currently, I'm working on something new..." />
       </div>
 
       <div className="research-block" ref={researchSection} >
-        <h2 className="header-style sub-header-ff"> Research </h2>
+        <h2 className="header-style sub-header-ff"> Past Research </h2>
 
       <WorkBlock img_src="assets/pictures/paper12.png"
           title="FirePlace: Geometric Refinements of LLM Common Sense Reasoning for 3D Object Placement"
@@ -258,8 +255,8 @@ function App() {
           <h2 className="header-style sub-header-ff"> Contact </h2>
           <img className="purplehat" src="assets/pulsing_purple_hat.png" alt="purple hat" />
           <div>
-          If you're interested in this direction or would like to chat, please reach out to me at <br />
-            <b >ianhuang[at]stanford.edu</b>!
+          If you're interested in chatting: <br />
+            <b >ian[at]thoughtform.ai</b>
           </div>
       </div>
 
